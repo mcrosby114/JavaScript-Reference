@@ -6,4 +6,4 @@ The value of `this` is derived from one of four possible function invocation typ
 1. **new Binding**: A function was called with the `new` operator. In this case, the newly constructed object is set as the `this` binding for that function call.
 2. **Explicit bindings**: A function was called with `call(..)`, `apply(..)`, or `bind(..)` methods of the `Function` prototype. The value of `this` is whatever object is passed in as the first argument to `call`, `apply`, or `bind`.
 3. **Implicity binding**: A function was called directly off of a context object (as a property value: e.g., `obj.myFunction()`. The value of `this` is the context object owning the function call.
-4. **Default binding**: The value of `this` is `undefined` in if the call occurs within `"use strict";`; otherwise it's the `global` object (`window` in browsers).
+4. **Default binding**: The value of `this` is `undefined` in if the call occurs within `"use strict";`. Otherwise, it's the `global` object (`window` in browsers).
